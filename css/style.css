@@ -1,7 +1,6 @@
 /* =========================
    AJUSTES MOBILE PROFISSIONAIS
-   CENTRALIZADO + SEM VAZAMENTO
-   NÃO ALTERA DESKTOP
+   TELA ESTÁVEL (SEM MEXER NO PC)
    ========================= */
 
 /* FIX GLOBAL (OBRIGATÓRIO) */
@@ -14,23 +13,18 @@ html, body {
 
 @media (max-width: 768px) {
 
-  body {
-    overflow-x: hidden;
-  }
-
   /* HERO */
   .hero {
     padding: 0 20px;
-    overflow: hidden; /* trava vazamento */
+    overflow: hidden; /* trava elementos absolutos */
   }
 
   .hero .glow {
     width: 260px;
     height: 260px;
-    filter: blur(80px);
-    position: absolute;
-    top: 50%;
+    filter: blur(90px);
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
 
